@@ -13,3 +13,4 @@ This repository is a simple Jekyll static site that lists art prints from a CSV 
 - The site is a single page (`index.html`) with a product grid using the default layout.
 - Rendering prefers `site.data.listing_normalized` and falls back to `site.data.listing`.
 - Styling is in `assets/css/site.css`.
+- Client-side sorting is available for price, size, and name via a dropdown hidden in print.

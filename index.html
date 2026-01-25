@@ -3,10 +3,24 @@ layout: default
 title: Virginie Prints
 ---
 
-{% assign products = site.data.listing_normalized %}
+<div class="controls">
+  <label for="sort-select">Sort by</label>
+  <select id="sort-select">
+    <option value="price">Price</option>
+    <option value="size">Size</option>
+    <option value="name">Name</option>
+  </select>
+</div>
+
+{% assign products = site.data.listing_normalized | default: site.data.listing %}
 <section class="listing-grid">
   {% for item in products %}
-    <article class="card">
+    <article
+      class="card"
+      data-name="{{ item.Name | escape }}"
+      data-size="{{ item.Size | escape }}"
+      data-price="{{ item.Price | escape }}"
+    >
       <figure>
         <img
           src="{{ '/assets/img/' | relative_url }}{{ item.Image | default: forloop.index }}.jpg"
@@ -26,3 +40,47 @@ title: Virginie Prints
     </article>
   {% endfor %}
 </section>
+
+<script>
+  (function () {
+    var select = document.getElementById("sort-select");
+    var grid = document.querySelector(".listing-grid");
+    if (!select || !grid) {
+      return;
+    }
+
+    function parsePrice(value) {
+      var parsed = parseFloat(String(value || "").replace(",", "."));
+      return Number.isNaN(parsed) ? null : parsed;
+    }
+
+    function sortCards(key) {
+      var cards = Array.prototype.slice.call(grid.querySelectorAll(".card"));
+      cards.sort(function (a, b) {
+        if (key === "price") {
+          var priceA = parsePrice(a.dataset.price);
+          var priceB = parsePrice(b.dataset.price);
+          if (priceA === null && priceB === null) return 0;
+          if (priceA === null) return 1;
+          if (priceB === null) return -1;
+          return priceA - priceB;
+        }
+
+        var valueA = a.dataset[key] || "";
+        var valueB = b.dataset[key] || "";
+        return valueA.localeCompare(valueB, undefined, { numeric: true, sensitivity: "base" });
+      });
+
+      cards.forEach(function (card) {
+        grid.appendChild(card);
+      });
+    }
+
+    select.addEventListener("change", function () {
+      sortCards(select.value);
+    });
+
+    select.value = "price";
+    sortCards("price");
+  })();
+</script>
