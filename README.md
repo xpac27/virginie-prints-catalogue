@@ -1,7 +1,7 @@
 # Virginie Prints Listing
 
-Static Jekyll site that renders the product catalogue from `_data/listing.csv` and images from `assets/img/`.
-The CSV is preprocessed to fill carry-forward values and add an `Image` column before Jekyll runs.
+Static Jekyll site that renders products from the `_products/` collection.
+Products are generated from `_data/listing_normalized.csv` (derived from `_data/listing.csv`) and include their image and metadata in each product folder.
 
 ## Quick start
 
@@ -12,4 +12,15 @@ bundle exec rake serve
 
 Then open `http://localhost:4000`.
 
-The preprocess step runs `scripts/preprocess_listing.rb` and writes `_data/listing_normalized.csv`.
+To regenerate products after editing the CSV:
+
+```bash
+bundle exec rake refresh
+```
+
+This runs:
+
+- `scripts/preprocess_listing.rb` to create `_data/listing_normalized.csv`.
+- `scripts/import_products.rb` to generate `_products/<slug>/index.md` and place images into each product folder.
+
+When adding new products, place their images in `assets/img/` with the numeric index from the CSV before running `bundle exec rake refresh`.
