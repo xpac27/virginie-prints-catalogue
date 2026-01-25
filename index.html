@@ -1,0 +1,27 @@
+---
+layout: default
+title: Virginie Prints
+---
+
+<section class="listing-grid">
+  {% for item in site.data.listing %}
+    <article class="card">
+      <figure>
+        <img
+          src="{{ '/assets/img/' | relative_url }}{{ forloop.index }}.jpg"
+          alt="{{ item.Name | escape }}"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800\" height=\"800\" viewBox=\"0 0 800 800\"><rect width=\"800\" height=\"800\" fill=\"%23efe7d6\"/><text x=\"50%\" y=\"50%\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Space Grotesk, Trebuchet MS, sans-serif\" font-size=\"32\" fill=\"%236b6252\">Image unavailable</text></svg>'"
+        />
+      </figure>
+      <div class="content">
+        <h2>{{ item.Name }}</h2>
+        <div class="meta">{{ item.Size }} · {{ item.Techniques }}</div>
+        <div class="price">{{ item.Price }}</div>
+        {% if item.Star and item.Star != "" %}
+          <div class="star">{{ item.Star }} Featured</div>
+        {% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</section>

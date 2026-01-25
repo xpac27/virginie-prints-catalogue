@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <p class="eyebrow">Prints Catalogue</p>
+        <h1 class="site-title">{{ page.title | default: site.title }}</h1>
+        <p class="subhead">Original works and limited series. All sizes and techniques listed.</p>
+      </div>
+    </header>
+
+    <main class="container">
+      {{ content }}
+    </main>
+  </body>
+</html>
