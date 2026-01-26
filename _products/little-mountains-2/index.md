@@ -1,9 +1,7 @@
 ---
 title: "Little mountains 2"
-name: "Little mountains 2"
 size: "13x18"
 techniques: "Linocut"
 price: "250"
-image_index: "25"
-image_path: "/_products/little-mountains-2/image.jpg"
+featured: false
 ---

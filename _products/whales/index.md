@@ -1,9 +1,7 @@
 ---
 title: "Whales"
-name: "Whales"
 size: "A3"
 techniques: "Linocut"
 price: "500"
-image_index: "50"
-image_path: "/_products/whales/image.jpg"
+featured: false
 ---

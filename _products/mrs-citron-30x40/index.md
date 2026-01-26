@@ -1,10 +1,7 @@
 ---
 title: "Mrs Citron - 30x40"
-name: "Mrs Citron"
 size: "30x40"
 techniques: "Screen printing"
 price: "500"
-star: "★"
-image_index: "30"
-image_path: "/_products/mrs-citron-30x40/image.jpg"
+featured: true
 ---

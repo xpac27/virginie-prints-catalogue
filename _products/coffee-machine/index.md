@@ -1,10 +1,7 @@
 ---
 title: "Coffee machine"
-name: "Coffee machine"
 size: "24x24"
 techniques: "Screen printing"
 price: "350"
-star: "★"
-image_index: "18"
-image_path: "/_products/coffee-machine/image.jpg"
+featured: true
 ---
