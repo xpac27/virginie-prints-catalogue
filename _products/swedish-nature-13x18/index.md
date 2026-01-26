@@ -1,6 +1,5 @@
 ---
 title: "Swedish Nature - 13x18"
-name: "Swedish Nature"
 size: "13x18"
 techniques: "C"
 price: "200"

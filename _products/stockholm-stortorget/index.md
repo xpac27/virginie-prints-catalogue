@@ -1,6 +1,5 @@
 ---
 title: "Stockholm - Stortorget"
-name: "Stockholm - Stortorget"
 size: "A5"
 techniques: "Screen printing"
 price: "250"

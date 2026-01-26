@@ -1,6 +1,5 @@
 ---
 title: "Pink lemon"
-name: "Pink lemon"
 size: "A4"
 techniques: "Screen printing"
 price: "350"

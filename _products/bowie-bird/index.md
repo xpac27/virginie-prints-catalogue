@@ -1,6 +1,5 @@
 ---
 title: "Bowie-Bird"
-name: "Bowie-Bird"
 size: "A5"
 techniques: "Screen printing"
 price: "250"

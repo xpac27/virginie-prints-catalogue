@@ -1,6 +1,5 @@
 ---
 title: "Poulple"
-name: "Poulple"
 size: "A4"
 techniques: "Linocut"
 price: "350"

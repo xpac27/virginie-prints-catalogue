@@ -1,6 +1,5 @@
 ---
 title: "Stockholm - Mayor - A3"
-name: "Stockholm - Mayor"
 size: "A3"
 techniques: "Screen printing"
 price: "500"

@@ -1,6 +1,5 @@
 ---
 title: "Cat - Kiko"
-name: "Cat - Kiko"
 size: "A6"
 techniques: "Linocut"
 price: "200"

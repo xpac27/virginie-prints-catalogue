@@ -1,6 +1,5 @@
 ---
 title: "Stockholm - Gardian - A4"
-name: "Stockholm - Gardian"
 size: "A4"
 techniques: "Screen printing"
 price: "350"

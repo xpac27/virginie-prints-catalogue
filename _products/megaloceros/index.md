@@ -1,6 +1,5 @@
 ---
 title: "Megaloceros"
-name: "Megaloceros"
 size: "24x30"
 techniques: "Linocut"
 price: "350"

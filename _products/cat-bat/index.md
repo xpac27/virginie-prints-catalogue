@@ -1,6 +1,5 @@
 ---
 title: "Cat - Bat"
-name: "Cat - Bat"
 size: "A6"
 techniques: "Linocut"
 price: "150"

@@ -1,6 +1,5 @@
 ---
 title: "Mont blanc"
-name: "Mont blanc"
 size: "A6"
 techniques: "Linocut"
 price: "150"

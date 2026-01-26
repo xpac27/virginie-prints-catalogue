@@ -1,6 +1,5 @@
 ---
 title: "Be your self"
-name: "Be your self"
 size: "18x18"
 techniques: "Screen printing"
 price: "250"

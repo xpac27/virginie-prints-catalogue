@@ -1,6 +1,5 @@
 ---
 title: "Cat - twin"
-name: "Cat - twin"
 size: "A4"
 techniques: "Screen printing"
 price: "350"

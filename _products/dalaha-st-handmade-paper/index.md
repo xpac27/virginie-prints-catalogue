@@ -1,6 +1,5 @@
 ---
 title: "Dalahäst - Handmade Paper"
-name: "Dalahäst"
 size: "Handmade Paper"
 techniques: "Linocut"
 price: "250"

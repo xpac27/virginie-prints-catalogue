@@ -1,6 +1,5 @@
 ---
 title: "Stockholm - Gardian - 30x40"
-name: "Stockholm - Gardian"
 size: "30x40"
 techniques: "Screen printing"
 price: "500"

@@ -1,6 +1,5 @@
 ---
 title: "Cat-astrophe - A4"
-name: "Cat-astrophe"
 size: "A4"
 techniques: "Screen printing"
 price: "350"

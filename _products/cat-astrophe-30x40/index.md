@@ -1,6 +1,5 @@
 ---
 title: "Cat-astrophe - 30x40"
-name: "Cat-astrophe"
 size: "30x40"
 techniques: "Screen printing"
 price: "500"

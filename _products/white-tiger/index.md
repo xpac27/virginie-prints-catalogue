@@ -1,6 +1,5 @@
 ---
 title: "White tiger"
-name: "White tiger"
 size: "A4"
 techniques: "Linocut"
 price: "350"

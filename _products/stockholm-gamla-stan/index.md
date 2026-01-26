@@ -1,6 +1,5 @@
 ---
 title: "Stockholm - Gamla Stan"
-name: "Stockholm - Gamla Stan"
 size: "A4"
 techniques: "Screen printing"
 price: "350"

@@ -1,6 +1,5 @@
 ---
 title: "Wild geese"
-name: "Wild geese"
 size: "A5"
 techniques: "Screen printing"
 price: "250"

@@ -1,6 +1,5 @@
 ---
 title: "Utö"
-name: "Utö"
 size: "A4"
 techniques: "Linocut"
 price: "350"

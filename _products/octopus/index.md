@@ -1,6 +1,5 @@
 ---
 title: "Octopus"
-name: "Octopus"
 size: "24x30"
 techniques: "Linocut"
 price: "350"

@@ -1,6 +1,5 @@
 ---
 title: "Swedish Nature - A6"
-name: "Swedish Nature"
 size: "A6"
 techniques: "C"
 price: "150"

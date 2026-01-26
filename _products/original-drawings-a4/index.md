@@ -1,6 +1,5 @@
 ---
 title: "Original Drawings - A4"
-name: "Original Drawings"
 size: "A4"
 techniques: "G"
 price: "750"

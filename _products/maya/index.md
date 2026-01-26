@@ -1,6 +1,5 @@
 ---
 title: "Maya"
-name: "Maya"
 size: "A4"
 techniques: "Linocut"
 price: "350"

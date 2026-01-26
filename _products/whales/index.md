@@ -1,6 +1,5 @@
 ---
 title: "Whales"
-name: "Whales"
 size: "A3"
 techniques: "Linocut"
 price: "500"

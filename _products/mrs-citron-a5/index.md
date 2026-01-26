@@ -1,6 +1,5 @@
 ---
 title: "Mrs Citron - A5"
-name: "Mrs Citron"
 size: "A5"
 techniques: "Linocut"
 price: "250"

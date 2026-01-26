@@ -81,7 +81,6 @@ rows.each do |row|
   front_matter = []
   front_matter << "---"
   front_matter << "title: \"#{escape_yaml(title)}\""
-  front_matter << "name: \"#{escape_yaml(name)}\""
   front_matter << "size: \"#{escape_yaml(size)}\"" unless size.empty?
   front_matter << "techniques: \"#{escape_yaml(techniques)}\"" unless techniques.empty?
   front_matter << "price: \"#{escape_yaml(price)}\"" unless price.empty?

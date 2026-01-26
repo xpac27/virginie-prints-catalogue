@@ -1,6 +1,5 @@
 ---
 title: "Cat - Ying yang - 13x18"
-name: "Cat - Ying yang"
 size: "13x18"
 techniques: "Linocut"
 price: "200"

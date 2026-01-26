@@ -1,6 +1,5 @@
 ---
 title: "Original Drawings - A6"
-name: "Original Drawings"
 size: "A6"
 techniques: "G"
 price: "250"

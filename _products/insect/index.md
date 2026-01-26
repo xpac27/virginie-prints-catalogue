@@ -1,6 +1,5 @@
 ---
 title: "Insect"
-name: "Insect"
 size: "24x30"
 techniques: "Linocut"
 price: "350"

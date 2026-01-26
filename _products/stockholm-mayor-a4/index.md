@@ -1,6 +1,5 @@
 ---
 title: "Stockholm - Mayor - A4"
-name: "Stockholm - Mayor"
 size: "A4"
 techniques: "Screen printing"
 price: "350"

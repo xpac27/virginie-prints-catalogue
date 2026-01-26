@@ -1,6 +1,5 @@
 ---
 title: "Cat - Mermaid - 13x18"
-name: "Cat - Mermaid"
 size: "13x18"
 techniques: "L + S"
 price: "200"

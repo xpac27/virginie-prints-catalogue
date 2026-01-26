@@ -1,6 +1,5 @@
 ---
 title: "Cat-mastree - A5"
-name: "Cat-mastree"
 size: "A5"
 techniques: "Linocut"
 price: "200"

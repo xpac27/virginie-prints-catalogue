@@ -1,6 +1,5 @@
 ---
 title: "Jaguar"
-name: "Jaguar"
 size: "A4"
 techniques: "L + S"
 price: "350"

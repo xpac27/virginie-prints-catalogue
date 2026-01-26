@@ -1,6 +1,5 @@
 ---
 title: "Mrs / Mr Pintree"
-name: "Mrs / Mr Pintree"
 size: "A5"
 techniques: "Linocut"
 price: "200"

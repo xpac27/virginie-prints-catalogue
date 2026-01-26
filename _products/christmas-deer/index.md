@@ -1,6 +1,5 @@
 ---
 title: "Christmas Deer"
-name: "Christmas Deer"
 size: "A5"
 techniques: "Linocut"
 price: "150"

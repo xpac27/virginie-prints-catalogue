@@ -1,6 +1,5 @@
 ---
 title: "Cat - Yul"
-name: "Cat - Yul"
 size: "A6"
 techniques: "Linocut"
 price: "150"

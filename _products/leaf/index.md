@@ -1,6 +1,5 @@
 ---
 title: "Leaf"
-name: "Leaf"
 size: "A4"
 techniques: "Screen printing"
 price: "350"

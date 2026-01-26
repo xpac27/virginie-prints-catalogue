@@ -1,6 +1,5 @@
 ---
 title: "Capilaire (pink leef)"
-name: "Capilaire (pink leef)"
 size: "A5"
 techniques: "Linocut"
 price: "250"

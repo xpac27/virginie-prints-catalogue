@@ -1,6 +1,5 @@
 ---
 title: "Runsten - A6"
-name: "Runsten"
 size: "A6"
 techniques: "Screen printing"
 price: "150"

@@ -1,6 +1,5 @@
 ---
 title: "Pepparkakshus"
-name: "Pepparkakshus"
 size: "A5"
 techniques: "Screen printing"
 price: "150"

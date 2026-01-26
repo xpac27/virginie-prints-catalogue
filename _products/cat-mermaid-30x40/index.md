@@ -1,6 +1,5 @@
 ---
 title: "Cat - Mermaid - 30x40"
-name: "Cat - Mermaid"
 size: "30x40"
 techniques: "Screen printing"
 price: "500"

@@ -1,6 +1,5 @@
 ---
 title: "Lovers"
-name: "Lovers"
 size: "A4"
 techniques: "Screen printing"
 price: "350"
