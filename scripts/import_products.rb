@@ -55,7 +55,6 @@ rows.each do |row|
 
   image_index = row["Image"].to_s.strip
   image_dest = File.join(folder, "image.jpg")
-  image_path = "/_products/#{slug}/image.jpg"
 
   if !image_index.empty?
     if File.exist?(image_dest)
@@ -85,8 +84,6 @@ rows.each do |row|
   front_matter << "techniques: \"#{escape_yaml(techniques)}\"" unless techniques.empty?
   front_matter << "price: \"#{escape_yaml(price)}\"" unless price.empty?
   front_matter << "featured: #{featured}"
-  front_matter << "image_index: \"#{escape_yaml(image_index)}\"" unless image_index.empty?
-  front_matter << "image_path: \"#{escape_yaml(image_path)}\""
   front_matter << "---"
 
   File.write(File.join(folder, "index.md"), front_matter.join("\n") + "\n")

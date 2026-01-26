@@ -4,6 +4,4 @@ size: "13x18"
 techniques: "Linocut"
 price: "250"
 featured: false
-image_index: "25"
-image_path: "/_products/little-mountains-2/image.jpg"
 ---

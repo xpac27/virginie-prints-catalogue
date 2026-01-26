@@ -4,6 +4,4 @@ size: "30x40"
 techniques: "Screen printing"
 price: "500"
 featured: false
-image_index: "40"
-image_path: "/_products/stockholm-gardian-30x40/image.jpg"
 ---
