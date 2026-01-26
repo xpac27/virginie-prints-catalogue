@@ -1,5 +1,5 @@
 ---
-title: "astrophe"
+title: "Catastrophe"
 featured: true
 sort_price: 350.0
 sort_size: "A4"
