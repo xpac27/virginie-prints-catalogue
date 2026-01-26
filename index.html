@@ -17,7 +17,7 @@ title: Virginie Prints
   {% for item in products %}
     {% assign product_dir = item.relative_path | split: '/' | slice: 1, 1 | first %}
     <article
-      class="card"
+      class="card{% if item.featured %} is-featured{% endif %}"
       data-name="{{ item.title | escape }}"
       data-size="{{ item.size | escape }}"
       data-price="{{ item.price | escape }}"
@@ -30,13 +30,13 @@ title: Virginie Prints
           onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800\" height=\"800\" viewBox=\"0 0 800 800\"><rect width=\"800\" height=\"800\" fill=\"%23efe7d6\"/><text x=\"50%\" y=\"50%\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Space Grotesk, Trebuchet MS, sans-serif\" font-size=\"32\" fill=\"%236b6252\">Image unavailable</text></svg>'"
         />
       </figure>
+      {% if item.featured %}
+        <span class="star-icon" aria-label="Featured">★</span>
+      {% endif %}
       <div class="content">
         <h2>{{ item.title }}</h2>
         <div class="meta">{{ item.size }} · {{ item.techniques }}</div>
         <div class="price">{{ item.price }} SEK</div>
-        {% if item.featured %}
-          <div class="star">Featured</div>
-        {% endif %}
       </div>
     </article>
   {% endfor %}
