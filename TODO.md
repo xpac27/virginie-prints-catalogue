@@ -1,13 +1,12 @@
-- featured needs to be a star displayed on top of the card in a corner
-- products tiles need to have support for multiple versions and for each version multiple size and a different price for each size, ex:
+- [x] featured needs to be a star displayed on top of the card in a corner
+- [ ] products tiles need to have support for multiple versions and for each version multiple size and a different price for each size, ex:
   - Linocut
     - Small - 200 SEK
     - Medium - 350 SEK
   - Drawing
     - Medium - 150 SEK
-- in _products's index.md
-  - do we need title and name?
-  - do we need image index or can it be inferred?
-  - do we need image_path or can it be inferred?
-  - instead of star we can have featured: true/false
-- we want square thumbnails for the product card 
+- [x] in _products's index.md
+  - [x] do we need title and name?
+  - [x] do we need image index or can it be inferred?
+  - [x] do we need image_path or can it be inferred?
+  - [x] instead of star we can have featured: true/false
