@@ -1,6 +1,6 @@
 ---
-title: "Mrs / Mr Pintree"
-featured: false
+title: "mastree"
+featured: true
 sort_price: 200.0
 sort_size: "A5"
 versions:
@@ -8,4 +8,8 @@ versions:
     sizes:
       - size: "A5"
         price: 200
+  - technique: "Screen printing"
+    sizes:
+      - size: "30x40"
+        price: 500
 ---

@@ -9,6 +9,7 @@ This repository is a simple Jekyll static site that lists art prints from a CSV 
 - Products are generated into `_products/<slug>/` with `index.md` and `image.jpg` for each row.
 - Use `bundle exec rake refresh` to rebuild `_products` from the CSV sources.
 - New images are sourced from `assets/img/` using the `Image` index during refresh.
+- Each product `index.md` uses a `versions` list to capture techniques with per-size prices.
 
 ## Output
 

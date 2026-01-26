@@ -1,7 +1,11 @@
 ---
 title: "Begonia maculata"
-size: "A4"
-techniques: "Screen printing"
-price: "350"
 featured: true
+sort_price: 350.0
+sort_size: "A4"
+versions:
+  - technique: "Screen printing"
+    sizes:
+      - size: "A4"
+        price: 350
 ---

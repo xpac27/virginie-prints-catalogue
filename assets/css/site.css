@@ -123,14 +123,29 @@ body {
   margin: 0;
 }
 
-.meta {
-  font-size: 0.9rem;
-  color: var(--muted);
+.versions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+  font-size: 0.92rem;
+  color: var(--ink);
 }
 
-.price {
+.versions > li {
+  list-style: none;
+}
+
+.version-name {
+  display: block;
   font-weight: 600;
-  color: var(--clay);
+}
+
+.versions ul {
+  margin: 0.25rem 0 0 1rem;
+  padding: 0;
+  color: var(--muted);
 }
 
 .star {

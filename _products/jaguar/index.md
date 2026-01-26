@@ -1,7 +1,11 @@
 ---
 title: "Jaguar"
-size: "A4"
-techniques: "L + S"
-price: "350"
 featured: false
+sort_price: 350.0
+sort_size: "A4"
+versions:
+  - technique: "L + S"
+    sizes:
+      - size: "A4"
+        price: 350
 ---

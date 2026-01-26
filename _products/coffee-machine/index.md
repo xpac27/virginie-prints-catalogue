@@ -1,7 +1,11 @@
 ---
 title: "Coffee machine"
-size: "24x24"
-techniques: "Screen printing"
-price: "350"
 featured: true
+sort_price: 350.0
+sort_size: "24x24"
+versions:
+  - technique: "Screen printing"
+    sizes:
+      - size: "24x24"
+        price: 350
 ---

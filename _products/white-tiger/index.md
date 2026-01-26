@@ -1,7 +1,11 @@
 ---
 title: "White tiger"
-size: "A4"
-techniques: "Linocut"
-price: "350"
 featured: false
+sort_price: 350.0
+sort_size: "A4"
+versions:
+  - technique: "Linocut"
+    sizes:
+      - size: "A4"
+        price: 350
 ---

@@ -1,11 +1,11 @@
 ---
-title: "Two Carp"
+title: "twin"
 featured: false
 sort_price: 350.0
-sort_size: "24x24"
+sort_size: "A4"
 versions:
   - technique: "Screen printing"
     sizes:
-      - size: "24x24"
+      - size: "A4"
         price: 350
 ---

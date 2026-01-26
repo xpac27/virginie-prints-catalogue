@@ -1,7 +1,11 @@
 ---
 title: "Two women's vase"
-size: "24x32"
-techniques: "Screen printing"
-price: "450"
 featured: true
+sort_price: 450.0
+sort_size: "24x32"
+versions:
+  - technique: "Screen printing"
+    sizes:
+      - size: "24x32"
+        price: 450
 ---

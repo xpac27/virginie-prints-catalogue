@@ -1,7 +1,11 @@
 ---
 title: "Hirondelle"
-size: "30x40"
-techniques: "Linocut"
-price: "500"
 featured: false
+sort_price: 500.0
+sort_size: "30x40"
+versions:
+  - technique: "Linocut"
+    sizes:
+      - size: "30x40"
+        price: 500
 ---
