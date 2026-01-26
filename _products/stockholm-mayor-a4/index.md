@@ -4,7 +4,7 @@ name: "Stockholm - Mayor"
 size: "A4"
 techniques: "Screen printing"
 price: "350"
-star: "★"
+featured: true
 image_index: "41"
 image_path: "/_products/stockholm-mayor-a4/image.jpg"
 ---

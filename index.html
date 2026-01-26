@@ -33,8 +33,8 @@ title: Virginie Prints
         <h2>{{ item.title }}</h2>
         <div class="meta">{{ item.size }} · {{ item.techniques }}</div>
         <div class="price">{{ item.price }} SEK</div>
-        {% if item.star and item.star != "" %}
-          <div class="star">{{ item.star }} Featured</div>
+        {% if item.featured %}
+          <div class="star">Featured</div>
         {% endif %}
       </div>
     </article>

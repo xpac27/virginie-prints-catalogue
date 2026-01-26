@@ -4,6 +4,7 @@ name: "Mrs / Mr Pintree"
 size: "A5"
 techniques: "Linocut"
 price: "200"
+featured: false
 image_index: "31"
 image_path: "/_products/mrs-mr-pintree/image.jpg"
 ---

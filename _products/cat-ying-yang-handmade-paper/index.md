@@ -4,7 +4,7 @@ name: "Cat - Ying yang"
 size: "Handmade Paper"
 techniques: "Linocut"
 price: "250"
-star: "★"
+featured: true
 image_index: "15"
 image_path: "/_products/cat-ying-yang-handmade-paper/image.jpg"
 ---

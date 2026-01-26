@@ -76,6 +76,7 @@ rows.each do |row|
   price = row["Price"].to_s.strip
   techniques = row["Techniques"].to_s.strip
   star = row["Star"].to_s.strip
+  featured = !star.empty?
 
   front_matter = []
   front_matter << "---"
@@ -84,7 +85,7 @@ rows.each do |row|
   front_matter << "size: \"#{escape_yaml(size)}\"" unless size.empty?
   front_matter << "techniques: \"#{escape_yaml(techniques)}\"" unless techniques.empty?
   front_matter << "price: \"#{escape_yaml(price)}\"" unless price.empty?
-  front_matter << "star: \"#{escape_yaml(star)}\"" unless star.empty?
+  front_matter << "featured: #{featured}"
   front_matter << "image_index: \"#{escape_yaml(image_index)}\"" unless image_index.empty?
   front_matter << "image_path: \"#{escape_yaml(image_path)}\""
   front_matter << "---"
