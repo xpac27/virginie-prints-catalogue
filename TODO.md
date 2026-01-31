@@ -16,7 +16,7 @@
   - [x] add sort by price ASC and DESC
   - [x] sort by the cheaper price if multiple prices exist and remove the `sort_price` field
   - [x] add a filter to select sizes that should be displayed
-  - [ ] when sorting price low high sort by the lowest price available for each product variant and vice versa for high low
+  - [x] when sorting price low high sort by the lowest price available for each product variant and vice versa for high low
 - [ ] make the star a small icon assigned to 1 variant only rather than the whole product
 - [ ] can we prepare the images to be displayed in different sizes instead of resizing them on the fly?
 - [ ] clicking on the preview needs to show that image in a modal centered over the current page

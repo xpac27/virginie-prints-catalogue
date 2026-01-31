@@ -46,10 +46,24 @@ title: Virginie Prints
         {% endif %}
       {% endfor %}
     {% endfor %}
+    {% assign cheapest = nil %}
+    {% assign priciest = nil %}
+    {% for version in item.versions %}
+      {% for entry in version.sizes %}
+        {% assign candidate = entry.price | replace: ',', '.' | plus: 0 %}
+        {% if cheapest == nil or candidate < cheapest %}
+          {% assign cheapest = candidate %}
+        {% endif %}
+        {% if priciest == nil or candidate > priciest %}
+          {% assign priciest = candidate %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
     <article
       class="card{% if item.featured %} is-featured{% endif %}"
       data-name="{{ item.title | escape }}"
-      data-price="{% assign cheapest = nil %}{% for version in item.versions %}{% for entry in version.sizes %}{% assign candidate = entry.price | replace: ',', '.' | plus: 0 %}{% if cheapest == nil or candidate < cheapest %}{% assign cheapest = candidate %}{% endif %}{% endfor %}{% endfor %}{{ cheapest }}"
+      data-price-low="{{ cheapest }}"
+      data-price-high="{{ priciest }}"
       data-sizes="{{ sizes_list | escape }}"
     >
       <figure>
@@ -113,8 +127,9 @@ title: Virginie Prints
       var cards = Array.prototype.slice.call(grid.querySelectorAll(".card"));
       cards.sort(function (a, b) {
         if (key === "price-asc" || key === "price-desc") {
-          var priceA = parsePrice(a.dataset.price);
-          var priceB = parsePrice(b.dataset.price);
+          var priceKey = key === "price-desc" ? "priceHigh" : "priceLow";
+          var priceA = parsePrice(a.dataset[priceKey]);
+          var priceB = parsePrice(b.dataset[priceKey]);
           if (priceA === null && priceB === null) return 0;
           if (priceA === null) return 1;
           if (priceB === null) return -1;
