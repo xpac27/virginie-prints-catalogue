@@ -140,14 +140,11 @@ products.each_value do |product|
   end
   min_price = price_values.min
 
-  sort_size = product[:versions].dig(0, "sizes", 0, "size")
-
   front_matter = []
   front_matter << "---"
   front_matter << "title: \"#{title.gsub("\"", "\\\"")}\""
   front_matter << "featured: #{product[:featured]}"
   front_matter << "sort_price: #{min_price}" if min_price
-  front_matter << "sort_size: \"#{sort_size}\"" if sort_size && !sort_size.empty?
   front_matter << "versions:"
 
   product[:versions].each do |version|

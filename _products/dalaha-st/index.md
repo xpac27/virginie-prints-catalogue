@@ -2,7 +2,6 @@
 title: "Dalahäst"
 featured: true
 sort_price: 150.0
-sort_size: "13 x 18"
 versions:
   - technique: "Linocut"
     sizes:

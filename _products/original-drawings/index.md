@@ -2,7 +2,6 @@
 title: "Original Drawings"
 featured: false
 sort_price: 250.0
-sort_size: "A6"
 versions:
   - technique: "G"
     sizes:

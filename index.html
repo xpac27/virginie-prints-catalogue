@@ -6,9 +6,8 @@ title: Virginie Prints
 <div class="controls">
   <label for="sort-select">Sort by</label>
   <select id="sort-select">
-    <option value="price">Price</option>
-    <option value="size">Size</option>
     <option value="name">Name</option>
+    <option value="price">Price</option>
   </select>
 </div>
 
@@ -91,7 +90,7 @@ title: Virginie Prints
       sortCards(select.value);
     });
 
-    select.value = "price";
-    sortCards("price");
+    select.value = "name";
+    sortCards("name");
   })();
 </script>

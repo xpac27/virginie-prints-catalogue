@@ -2,7 +2,6 @@
 title: "Leaf"
 featured: false
 sort_price: 350.0
-sort_size: "A4"
 versions:
   - technique: "Screen printing"
     sizes:

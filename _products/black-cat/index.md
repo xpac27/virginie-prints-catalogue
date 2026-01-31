@@ -2,7 +2,6 @@
 title: "Black Cat"
 featured: true
 sort_price: 250.0
-sort_size: "A5"
 versions:
   - technique: "Linocut"
     sizes:

@@ -2,7 +2,6 @@
 title: "Be your self"
 featured: false
 sort_price: 250.0
-sort_size: "18x18"
 versions:
   - technique: "Screen printing"
     sizes:

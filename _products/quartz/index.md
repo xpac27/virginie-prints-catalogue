@@ -2,7 +2,6 @@
 title: "Quartz"
 featured: false
 sort_price: 250.0
-sort_size: "A5"
 versions:
   - technique: "Linocut"
     sizes:

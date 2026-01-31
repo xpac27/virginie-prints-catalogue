@@ -2,7 +2,6 @@
 title: "Whales"
 featured: false
 sort_price: 500.0
-sort_size: "A3"
 versions:
   - technique: "Linocut"
     sizes:

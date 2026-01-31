@@ -10,13 +10,14 @@
   - [x] do we need image index or can it be inferred?
   - [x] do we need image_path or can it be inferred?
   - [x] instead of star we can have featured: true/false
-- [ ] sort by name by default
-- [ ] remove sorting by size
-- [ ] add sort by price ASC and DESC
-- [ ] sort by the cheaper price if multiple prices exist and remove the `sort_price` field
-- [ ] add a filter to select sizes that should be displayed
-- [ ] can we prepare the images to be displayed in different sizes instead of resizing them on the fly?
+- [ ] improve sorting and filtering of products
+  - [x] sort by name by default
+  - [ ] remove sorting by size
+  - [ ] add sort by price ASC and DESC
+  - [ ] sort by the cheaper price if multiple prices exist and remove the `sort_price` field
+  - [ ] add a filter to select sizes that should be displayed
 - [ ] make the star a small icon assigned to 1 variant only rather than the whole product
+- [ ] can we prepare the images to be displayed in different sizes instead of resizing them on the fly?
 - [ ] clicking on the preview needs to show that image in a modal centered over the current page
   - [ ] the page needs to be blurred by a white translucent overlay and that happens gradually with a short animated transition
   - [ ] the magnified image needs to fade-in slowly
