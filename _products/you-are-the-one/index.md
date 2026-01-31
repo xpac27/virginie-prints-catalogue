@@ -1,7 +1,10 @@
 ---
 title: "You are the one"
-size: "18x18"
-techniques: "Linocut"
-price: "250"
 featured: false
+sort_price: 250.0
+versions:
+  - technique: "Linocut"
+    sizes:
+      - size: "18x18"
+        price: 250
 ---

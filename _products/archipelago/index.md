@@ -1,7 +1,10 @@
 ---
 title: "Archipelago"
-size: "24x24"
-techniques: "Linocut"
-price: "350"
 featured: false
+sort_price: 350.0
+versions:
+  - technique: "Linocut"
+    sizes:
+      - size: "24x24"
+        price: 350
 ---

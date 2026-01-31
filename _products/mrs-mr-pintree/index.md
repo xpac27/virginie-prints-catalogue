@@ -1,7 +1,10 @@
 ---
 title: "Mrs / Mr Pintree"
-size: "A5"
-techniques: "Linocut"
-price: "200"
 featured: false
+sort_price: 200.0
+versions:
+  - technique: "Linocut"
+    sizes:
+      - size: "A5"
+        price: 200
 ---

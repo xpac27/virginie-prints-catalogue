@@ -1,10 +1,12 @@
 ---
-title: "Swedish way of love"
+title: "Runsten"
 featured: false
-sort_price: 200.0
+sort_price: 150.0
 versions:
   - technique: "Screen printing"
     sizes:
-      - size: "13x18"
+      - size: "A6"
+        price: 150
+      - size: "A5"
         price: 200
 ---

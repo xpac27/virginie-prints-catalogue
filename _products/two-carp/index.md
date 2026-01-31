@@ -1,7 +1,10 @@
 ---
 title: "Two Carp"
-size: "24x24"
-techniques: "Screen printing"
-price: "350"
 featured: false
+sort_price: 350.0
+versions:
+  - technique: "Screen printing"
+    sizes:
+      - size: "24x24"
+        price: 350
 ---

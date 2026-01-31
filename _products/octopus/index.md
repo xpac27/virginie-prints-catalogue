@@ -1,7 +1,10 @@
 ---
 title: "Octopus"
-size: "24x30"
-techniques: "Linocut"
-price: "350"
 featured: false
+sort_price: 350.0
+versions:
+  - technique: "Linocut"
+    sizes:
+      - size: "24x30"
+        price: 350
 ---

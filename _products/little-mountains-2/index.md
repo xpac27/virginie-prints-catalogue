@@ -1,7 +1,10 @@
 ---
 title: "Little mountains 2"
-size: "13x18"
-techniques: "Linocut"
-price: "250"
 featured: false
+sort_price: 250.0
+versions:
+  - technique: "Linocut"
+    sizes:
+      - size: "13x18"
+        price: 250
 ---

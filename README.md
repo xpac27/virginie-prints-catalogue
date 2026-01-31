@@ -24,3 +24,17 @@ This runs:
 - `scripts/import_products.rb` to generate `_products/<slug>/index.md` and place images into each product folder.
 
 When adding new products, place their images in `assets/img/` with the numeric index from the CSV before running `bundle exec rake refresh`.
+
+Each product file uses a `versions` list in its front matter:
+
+```yaml
+versions:
+  - technique: "Screen printing"
+    sizes:
+      - size: "30x40"
+        price: 500
+  - technique: "Linocut"
+    sizes:
+      - size: "A5"
+        price: 250
+```

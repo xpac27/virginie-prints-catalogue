@@ -1,10 +1,10 @@
 ---
-title: "Swedish way of love"
-featured: false
-sort_price: 200.0
+title: "All we need is Love"
+featured: true
+sort_price: 250.0
 versions:
   - technique: "Screen printing"
     sizes:
       - size: "13x18"
-        price: 200
+        price: 250
 ---

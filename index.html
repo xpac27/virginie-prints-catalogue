@@ -6,9 +6,8 @@ title: Virginie Prints
 <div class="controls">
   <label for="sort-select">Sort by</label>
   <select id="sort-select">
-    <option value="price">Price</option>
-    <option value="size">Size</option>
     <option value="name">Name</option>
+    <option value="price">Price</option>
   </select>
 </div>
 
@@ -19,8 +18,8 @@ title: Virginie Prints
     <article
       class="card{% if item.featured %} is-featured{% endif %}"
       data-name="{{ item.title | escape }}"
-      data-size="{{ item.size | escape }}"
-      data-price="{{ item.price | escape }}"
+      data-size="{{ item.sort_size | escape }}"
+      data-price="{{ item.sort_price | escape }}"
     >
       <figure>
         <img
@@ -35,8 +34,18 @@ title: Virginie Prints
       {% endif %}
       <div class="content">
         <h2>{{ item.title }}</h2>
-        <div class="meta">{{ item.size }} · {{ item.techniques }}</div>
-        <div class="price">{{ item.price }} SEK</div>
+        <ul class="versions">
+          {% for version in item.versions %}
+            <li>
+              <span class="version-name">{{ version.technique }}</span>
+              <ul>
+                {% for entry in version.sizes %}
+                  <li>{{ entry.size }} - {{ entry.price }} SEK</li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
     </article>
   {% endfor %}
@@ -81,7 +90,7 @@ title: Virginie Prints
       sortCards(select.value);
     });
 
-    select.value = "price";
-    sortCards("price");
+    select.value = "name";
+    sortCards("name");
   })();
 </script>
