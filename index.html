@@ -3,6 +3,8 @@ layout: default
 title: Virginie Prints
 ---
 
+{% assign products = site.products %}
+
 <div class="controls">
   <label for="sort-select">Sort by</label>
   <select id="sort-select">
@@ -10,16 +12,45 @@ title: Virginie Prints
     <option value="price-asc">Price low to high</option>
     <option value="price-desc">Price high to low</option>
   </select>
+  <label for="size-filter">Size</label>
+  <select id="size-filter">
+    <option value="">All sizes</option>
+    {% assign all_sizes = "" %}
+    {% for product in products %}
+      {% for version in product.versions %}
+        {% for entry in version.sizes %}
+          {% assign size_value = entry.size | strip %}
+          {% if size_value != "" %}
+            {% assign all_sizes = all_sizes | append: size_value | append: "||" %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
+    {% assign sizes_array = all_sizes | split: "||" | uniq | sort %}
+    {% for size in sizes_array %}
+      {% if size != "" %}
+        <option value="{{ size | escape }}">{{ size }}</option>
+      {% endif %}
+    {% endfor %}
+  </select>
 </div>
-
-{% assign products = site.products %}
 <section class="listing-grid">
   {% for item in products %}
     {% assign product_dir = item.relative_path | split: '/' | slice: 1, 1 | first %}
+    {% assign sizes_list = "" %}
+    {% for version in item.versions %}
+      {% for entry in version.sizes %}
+        {% assign entry_size = entry.size | strip %}
+        {% if entry_size != "" %}
+          {% assign sizes_list = sizes_list | append: entry_size | append: "|" %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
     <article
       class="card{% if item.featured %} is-featured{% endif %}"
       data-name="{{ item.title | escape }}"
       data-price="{% assign cheapest = nil %}{% for version in item.versions %}{% for entry in version.sizes %}{% assign candidate = entry.price | replace: ',', '.' | plus: 0 %}{% if cheapest == nil or candidate < cheapest %}{% assign cheapest = candidate %}{% endif %}{% endfor %}{% endfor %}{{ cheapest }}"
+      data-sizes="{{ sizes_list | escape }}"
     >
       <figure>
         <img
@@ -54,14 +85,28 @@ title: Virginie Prints
 <script>
   (function () {
     var select = document.getElementById("sort-select");
+    var sizeFilter = document.getElementById("size-filter");
     var grid = document.querySelector(".listing-grid");
-    if (!select || !grid) {
+    if (!select || !sizeFilter || !grid) {
       return;
     }
 
     function parsePrice(value) {
       var parsed = parseFloat(String(value || "").replace(",", "."));
       return Number.isNaN(parsed) ? null : parsed;
+    }
+
+    function applyFilter() {
+      var selected = sizeFilter.value;
+      var cards = Array.prototype.slice.call(grid.querySelectorAll(".card"));
+      cards.forEach(function (card) {
+        if (!selected) {
+          card.style.display = "";
+          return;
+        }
+        var sizes = (card.dataset.sizes || "").split("|").filter(Boolean);
+        card.style.display = sizes.indexOf(selected) !== -1 ? "" : "none";
+      });
     }
 
     function sortCards(key) {
@@ -85,11 +130,15 @@ title: Virginie Prints
       cards.forEach(function (card) {
         grid.appendChild(card);
       });
+
+      applyFilter();
     }
 
     select.addEventListener("change", function () {
       sortCards(select.value);
     });
+
+    sizeFilter.addEventListener("change", applyFilter);
 
     select.value = "name";
     sortCards("name");
