@@ -133,18 +133,10 @@ products.each_value do |product|
     end
   end
 
-  price_values = product[:versions].flat_map do |version|
-    version["sizes"].map do |entry|
-      entry["price"].to_s.gsub(",", ".").to_f
-    end
-  end
-  min_price = price_values.min
-
   front_matter = []
   front_matter << "---"
   front_matter << "title: \"#{title.gsub("\"", "\\\"")}\""
   front_matter << "featured: #{product[:featured]}"
-  front_matter << "sort_price: #{min_price}" if min_price
   front_matter << "versions:"
 
   product[:versions].each do |version|

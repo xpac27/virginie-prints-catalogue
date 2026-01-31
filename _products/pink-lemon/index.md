@@ -1,7 +1,6 @@
 ---
 title: "Pink lemon"
 featured: false
-sort_price: 350.0
 versions:
   - technique: "Screen printing"
     sizes:

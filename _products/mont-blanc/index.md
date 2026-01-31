@@ -1,7 +1,6 @@
 ---
 title: "Mont blanc"
 featured: false
-sort_price: 150.0
 versions:
   - technique: "Linocut"
     sizes:

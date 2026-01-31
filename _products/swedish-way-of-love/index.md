@@ -1,7 +1,6 @@
 ---
 title: "Swedish way of love"
 featured: false
-sort_price: 200.0
 versions:
   - technique: "Screen printing"
     sizes:

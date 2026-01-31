@@ -1,7 +1,6 @@
 ---
 title: "Two women's vase"
 featured: true
-sort_price: 450.0
 versions:
   - technique: "Screen printing"
     sizes:

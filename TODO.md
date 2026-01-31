@@ -12,9 +12,9 @@
   - [x] instead of star we can have featured: true/false
 - [ ] improve sorting and filtering of products
   - [x] sort by name by default
-  - [ ] remove sorting by size
-  - [ ] add sort by price ASC and DESC
-  - [ ] sort by the cheaper price if multiple prices exist and remove the `sort_price` field
+  - [x] remove sorting by size
+  - [x] add sort by price ASC and DESC
+  - [x] sort by the cheaper price if multiple prices exist and remove the `sort_price` field
   - [ ] add a filter to select sizes that should be displayed
 - [ ] make the star a small icon assigned to 1 variant only rather than the whole product
 - [ ] can we prepare the images to be displayed in different sizes instead of resizing them on the fly?

@@ -7,7 +7,8 @@ title: Virginie Prints
   <label for="sort-select">Sort by</label>
   <select id="sort-select">
     <option value="name">Name</option>
-    <option value="price">Price</option>
+    <option value="price-asc">Price low to high</option>
+    <option value="price-desc">Price high to low</option>
   </select>
 </div>
 
@@ -18,8 +19,7 @@ title: Virginie Prints
     <article
       class="card{% if item.featured %} is-featured{% endif %}"
       data-name="{{ item.title | escape }}"
-      data-size="{{ item.sort_size | escape }}"
-      data-price="{{ item.sort_price | escape }}"
+      data-price="{% assign cheapest = nil %}{% for version in item.versions %}{% for entry in version.sizes %}{% assign candidate = entry.price | replace: ',', '.' | plus: 0 %}{% if cheapest == nil or candidate < cheapest %}{% assign cheapest = candidate %}{% endif %}{% endfor %}{% endfor %}{{ cheapest }}"
     >
       <figure>
         <img
@@ -67,13 +67,14 @@ title: Virginie Prints
     function sortCards(key) {
       var cards = Array.prototype.slice.call(grid.querySelectorAll(".card"));
       cards.sort(function (a, b) {
-        if (key === "price") {
+        if (key === "price-asc" || key === "price-desc") {
           var priceA = parsePrice(a.dataset.price);
           var priceB = parsePrice(b.dataset.price);
           if (priceA === null && priceB === null) return 0;
           if (priceA === null) return 1;
           if (priceB === null) return -1;
-          return priceA - priceB;
+          var diff = priceA - priceB;
+          return key === "price-desc" ? -diff : diff;
         }
 
         var valueA = a.dataset[key] || "";

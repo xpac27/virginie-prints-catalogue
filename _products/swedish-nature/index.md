@@ -1,7 +1,6 @@
 ---
 title: "Swedish Nature"
 featured: false
-sort_price: 150.0
 versions:
   - technique: "C"
     sizes:
