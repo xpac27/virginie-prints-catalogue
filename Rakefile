@@ -10,10 +10,16 @@ task :products do
   sh "ruby scripts/import_products.rb"
 end
 
+desc "Generate responsive square image derivatives for products"
+task :images do
+  sh "ruby scripts/generate_product_images.rb"
+end
+
 desc "Refresh products from listing.csv"
 task :refresh do
   sh "ruby scripts/preprocess_listing.rb"
   sh "ruby scripts/import_products.rb"
+  sh "ruby scripts/generate_product_images.rb"
 end
 
 desc "Preprocess data then run Jekyll serve"

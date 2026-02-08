@@ -1,5 +1,5 @@
 - [x] featured needs to be a star displayed on top of the card in a corner
-- [ ] products tiles need to have support for multiple versions and for each version multiple size and a different price for each size, ex:
+- [x] products tiles need to have support for multiple versions and for each version multiple size and a different price for each size, ex:
   - Linocut
     - Small - 200 SEK
     - Medium - 350 SEK
@@ -10,7 +10,7 @@
   - [x] do we need image index or can it be inferred?
   - [x] do we need image_path or can it be inferred?
   - [x] instead of star we can have featured: true/false
-- [ ] improve sorting and filtering of products
+- [x] improve sorting and filtering of products
   - [x] sort by name by default
   - [x] remove sorting by size
   - [x] add sort by price ASC and DESC

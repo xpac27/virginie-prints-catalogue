@@ -22,6 +22,7 @@ This runs:
 
 - `scripts/preprocess_listing.rb` to create `_data/listing_normalized.csv`.
 - `scripts/import_products.rb` to generate `_products/<slug>/index.md` and place images into each product folder.
+- `scripts/generate_product_images.rb` to generate square responsive derivatives (`320`, `580`, `900`) for each product image.
 
 When adding new products, place their images in `assets/img/` with the numeric index from the CSV before running `bundle exec rake refresh`.
 
