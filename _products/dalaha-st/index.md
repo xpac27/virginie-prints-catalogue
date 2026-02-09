@@ -4,7 +4,7 @@ featured: true
 versions:
   - technique: "Linocut"
     sizes:
-      - size: "13 x 18"
+      - size: "13x18"
         price: 150
       - size: "Handmade Paper"
         price: 250

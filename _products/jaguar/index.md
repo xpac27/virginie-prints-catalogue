@@ -2,7 +2,7 @@
 title: "Jaguar"
 featured: false
 versions:
-  - technique: "L + S"
+  - technique: "Linocut & Screenprinting"
     sizes:
       - size: "A4"
         price: 350
