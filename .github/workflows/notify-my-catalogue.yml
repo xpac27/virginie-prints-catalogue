@@ -1,0 +1,19 @@
+name: Notify Website Repository
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger submodule update in my-catalogue
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.MY_CATALOGUE_DISPATCH_TOKEN }}
+          repository: xpac27/my-catalogue
+          event-type: catalogue-updated
+          client-payload: '{"source_repo":"${{ github.repository }}","source_ref":"${{ github.ref }}","source_sha":"${{ github.sha }}"}'
