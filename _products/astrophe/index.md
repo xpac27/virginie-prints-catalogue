@@ -1,5 +1,5 @@
 ---
-title: "astrophe"
+title: "Catastrophe"
 featured: true
 versions:
   - technique: "Screen printing"
