@@ -2,7 +2,7 @@
 title: "Original Drawings"
 featured: false
 versions:
-  - technique: "G"
+  - technique: "Gouache + fine line drawing"
     sizes:
       - size: "A6"
         price: 250

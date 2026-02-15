@@ -2,7 +2,7 @@
 title: "Swedish Nature"
 featured: false
 versions:
-  - technique: "C"
+  - technique: "Cyanotype"
     sizes:
       - size: "A6"
         price: 150

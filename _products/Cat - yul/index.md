@@ -1,5 +1,5 @@
 ---
-title: "Yul"
+title: "Yul Cat"
 featured: false
 versions:
   - technique: "Linocut"
