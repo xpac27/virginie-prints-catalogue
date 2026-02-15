@@ -1,11 +1,11 @@
 ---
-title: "Stockholm - Gardian"
+title: "Mayor"
 featured: true
 versions:
   - technique: "Screen printing"
     sizes:
       - size: "A4"
         price: 350
-      - size: "30x40"
+      - size: "A3"
         price: 500
 ---

@@ -1,5 +1,5 @@
 ---
-title: "twin"
+title: "Twin cat"
 featured: false
 versions:
   - technique: "Screen printing"

@@ -1,5 +1,5 @@
 ---
-title: "Original Drawings"
+title: "Drawings"
 featured: false
 versions:
   - technique: "Gouache + fine line drawing"
