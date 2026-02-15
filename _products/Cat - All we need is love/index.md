@@ -4,6 +4,6 @@ featured: true
 versions:
   - technique: "Screen printing"
     sizes:
-      - size: "13x18"
+      - size: "A5"
         price: 250
 ---
