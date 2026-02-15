@@ -1,5 +1,5 @@
 ---
-title: "mastree"
+title: "Catmastree"
 featured: true
 versions:
   - technique: "Linocut"

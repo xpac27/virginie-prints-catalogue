@@ -2,7 +2,7 @@
 title: "Mermaid"
 featured: true
 versions:
-  - technique: "L + S"
+  - technique: "Linocut + "
     sizes:
       - size: "13x18"
         price: 200
