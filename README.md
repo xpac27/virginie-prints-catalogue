@@ -68,3 +68,20 @@ Rules:
 - Add a new technique: add a new item under `versions`.
 - Replace main image: overwrite `image.jpg`.
 - Add more modal images: add extra image files in the same folder.
+
+## Commit Hooks
+
+Install local hooks once:
+
+```bash
+./scripts/install-hooks.sh
+```
+
+The pre-commit hook blocks commits when:
+
+- any staged file is outside `_products/**`.
+- a product slug is invalid (must match `^[a-z0-9]+(-[a-z0-9]+)*$`).
+- a touched product folder is missing `index.md` or `image.jpg`.
+- a touched product folder contains unexpected filenames.
+- `index.md` front matter is invalid or missing required fields.
+- `index.md` contains duplicate `(technique, size)` pairs.
