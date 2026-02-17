@@ -48,10 +48,11 @@ versions:
 
 Rules:
 - `title`: product name shown on the website.
-- `featured`: `true` or `false`.
-- `versions`: list of techniques.
-- each technique has `sizes`.
+- `featured`: optional; if present, must be `true` or `false`.
+- `versions`: list of techniques (can be empty).
+- each technique has `sizes` (can be empty).
 - each size entry needs `size` and `price`.
+- each `price` must be greater than `0`.
 
 ## Images
 
